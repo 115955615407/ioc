@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-08-02 16:53:37 -->
+<!-- RELEASE TIME : 2022-08-02 17:41:06 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b96c3a452b9e0b1eee0090b4c7517e9e</td>
+       <td>CVE-2022-34618</td>
+       <td>2022-08-02 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>A stored cross-site scripting (XSS) vulnerability in Mealie 1.0.0beta3 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the recipe description text field.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34618">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b51c12a2c45986d747df53f4a02c19ca</td>
+       <td>CVE-2022-34613</td>
+       <td>2022-08-02 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Mealie 1.0.0beta3 contains an arbitrary file upload vulnerability which allows attackers to execute arbitrary code via a crafted file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34613">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>53d5e57681e0a31d8a48fab88de9be8b</td>
+       <td>CVE-2022-29154</td>
+       <td>2022-08-02 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in rsync before 3.2.5 that allows malicious remote servers to write arbitrary files inside the directories of connecting peers. The server chooses which files/directories are sent to the client. However, the rsync client performs insufficient validation of file names. A malicious rsync server (or Man-in-The-Middle attacker) can overwrite arbitrary files in the rsync client target directory and subdirectories (for example, overwrite the .ssh/authorized_keys file).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29154">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>19389b360f783f59d691d06cc8aec637</td>
+       <td>CVE-2022-25867</td>
+       <td>2022-08-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The package io.socket:socket.io-client before 2.0.1 are vulnerable to NULL Pointer Dereference when parsing a packet with with invalid payload format.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25867">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a8c8d8cfa38185c7a9bc1f2547a86409</td>
+       <td>CVE-2021-23385</td>
+       <td>2022-08-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>This affects all versions of package Flask-Security. When using the get_post_logout_redirect and get_post_login_redirect functions, it is possible to bypass URL validation and redirect a user to an arbitrary URL by providing multiple back slashes such as \\\evil.com/path. This vulnerability is only exploitable if an alternative WSGI server other than Werkzeug is used, or the default behaviour of Werkzeug is modified using 'autocorrect_location_header=False. **Note:** Flask-Security is not maintained anymore.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-23385">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>639de7f830b7856f1ea0a257c5fd2cbc</td>
+       <td>CVE-2020-7795</td>
+       <td>2022-08-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>The package get-npm-package-version before 1.0.7 are vulnerable to Command Injection via main function in index.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-7795">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fda7a3981a2c54b605a9fb38ba70baab</td>
+       <td>CVE-2020-28453</td>
+       <td>2022-08-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>This affects all versions of package npos-tesseract. The injection point is located in line 55 in lib/ocr.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-28453">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6d557bbe6ac812349e07ac0322f4b5ca</td>
+       <td>CVE-2020-28451</td>
+       <td>2022-08-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>This affects the package image-tiler before 2.0.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-28451">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>940c60a546ec66518332e0b1d4ed453a</td>
+       <td>CVE-2020-28437</td>
+       <td>2022-08-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>This affects all versions of package heroku-env. The injection point is located in lib/get.js which is required by index.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-28437">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>84c3108e061e4b26a2fd16c3bcfb36c8</td>
+       <td>CVE-2020-28434</td>
+       <td>2022-08-02 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>This affects all versions of package gitblame. The injection point is located in line 15 in lib/gitblame.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-28434">详情</a></td>
+      </tr>
+
+      <tr>
        <td>30b23b8d060e7e7b62f62dfa6dacde64</td>
        <td>CVE-2022-35422</td>
        <td>2022-08-02 03:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-08-01 20:15:00 <img src="imgs/new.gif" /></td>
        <td>PyroCMS v3.9 was discovered to contain multiple cross-site scripting (XSS) vulnerabilities.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35118">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5cb6b1fdec3684af620597c42f68dbe1</td>
-       <td>CVE-2022-31178</td>
-       <td>2022-08-01 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>eLabFTW is an electronic lab notebook manager for research teams. A vulnerability was discovered which allows a logged in user to read a template without being authorized to do so. This vulnerability has been patched in 4.3.4. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31178">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4e82fea42baa5ec8b17cf0b44e4d0dc0</td>
-       <td>CVE-2022-31177</td>
-       <td>2022-08-01 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Flask-AppBuilder is an application development framework built on top of Flask python framework. In versions prior to 4.1.3 an authenticated Admin user could query other users by their salted and hashed passwords strings. These filters could be made by using partial hashed password strings. The response would not include the hashed passwords, but an attacker could infer partial password hashes and their respective users. This issue has been fixed in version 4.1.3. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31177">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9649b049fe66c9160bbd4af1ab9d9b68</td>
-       <td>CVE-2022-31173</td>
-       <td>2022-08-01 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Juniper is a GraphQL server library for Rust. Affected versions of Juniper are vulnerable to uncontrolled recursion resulting in a program crash. This issue has been addressed in version 0.15.10. Users are advised to upgrade. Users unable to upgrade should limit the recursion depth manually.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31173">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>890153a68ae3118beb2938ad691e0014</td>
-       <td>CVE-2022-31155</td>
-       <td>2022-08-01 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Sourcegraph is an opensource code search and navigation engine. In Sourcegraph versions before 3.41.0, it is possible for an attacker to delete other usersâ€™ saved searches due to a bug in the authorization check. The vulnerability does not allow the reading of other usersâ€™ saved searches, only overwriting them with attacker-controlled searches. The issue is patched in Sourcegraph version 3.41.0. There is no workaround for this issue and updating to a secure version is highly recommended.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31155">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba7c300407638e661369eb740baef5cb</td>
-       <td>CVE-2022-31154</td>
-       <td>2022-08-01 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Sourcegraph is an opensource code search and navigation engine. It is possible for an authenticated Sourcegraph user to edit the Code Monitors owned by any other Sourcegraph user. This includes being able to edit both the trigger and the action of the monitor in question. An attacker is not able to read contents of existing code monitors, only override the data. The issue is fixed in Sourcegraph 3.42. There are no workaround for the issue and patching is highly recommended.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31154">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ec7583f7260408d9ffe2d53f10e0595d</td>
-       <td>CVE-2022-31148</td>
-       <td>2022-08-01 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Shopware is an open source e-commerce software. In versions from 5.7.0 a persistent cross site scripting (XSS) vulnerability exists in  the customer module. Users are recommend to update to the current version 5.7.14. You can get the update to 5.7.14 regularly via the Auto-Updater or directly via the download overview. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31148">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1140e6353ec95b10f6c72083457ad655</td>
-       <td>CVE-2022-31128</td>
-       <td>2022-08-01 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Tuleap is a Free & Open Source Suite to improve management of software developments and collaboration. In affected versions Tuleap does not properly verify permissions when creating branches with the REST API in Git repositories using the fine grained permissions. Users can create branches via the REST endpoint `POST git/:id/branches` regardless of the permissions set on the repository. This issue has been fixed in version 13.10.99.82 Tuleap Community Edition as well as in version 13.10-3 of Tuleap Enterprise Edition. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31128">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10d837190caaa22629cff5ecc3e49e8f</td>
-       <td>CVE-2022-31109</td>
-       <td>2022-08-01 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>laminas-diactoros is a PHP package containing implementations of the PSR-7 HTTP message interfaces and PSR-17 HTTP message factory interfaces. Applications that use Diactoros, and are either not behind a proxy, or can be accessed via untrusted proxies, can potentially have the host, protocol, and/or port of a `Laminas\Diactoros\Uri` instance associated with the incoming server request modified to reflect values from `X-Forwarded-*` headers. Such changes can potentially lead to XSS attacks (if a fully-qualified URL is used in links) and/or URL poisoning. Since the `X-Forwarded-*` headers do have valid use cases, particularly in clustered environments using a load balancer, the library offers mitigation measures only in the v2 releases, as doing otherwise would break these use cases immediately. Users of v2 releases from 2.11.1 can provide an additional argument to `Laminas\Diactoros\ServerRequestFactory::fromGlobals()` in the form of a `Laminas\Diactoros\RequestFilter\RequestFilterInterface` instance, including the shipped `Laminas\Diactoros\RequestFilter\NoOpRequestFilter` implementation which ignores the `X-Forwarded-*` headers. Starting in version 3.0, the library will reverse behavior to use the `NoOpRequestFilter` by default, and require users to opt-in to `X-Forwarded-*` header usage via a configured `Laminas\Diactoros\RequestFilter\LegacyXForwardedHeaderFilter` instance. Users are advised to upgrade to version 2.11.1 or later to resolve this issue. Users unable to upgrade may configure web servers to reject `X-Forwarded-*` headers at the web server level.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31109">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f7c03d7f36cbd02324f9f0944485808e</td>
-       <td>CVE-2022-31148</td>
-       <td>2022-08-01 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Shopware is an open source e-commerce software. In versions from 5.7.0 a persistent cross site scripting (XSS) vulnerability exists in the customer module. Users are recommend to update to the current version 5.7.14. You can get the update to 5.7.14 regularly via the Auto-Updater or directly via the download overview. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31148">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1106963b7c3fbc6147974e2aacae2b9a</td>
-       <td>CVE-2022-34307</td>
-       <td>2022-08-01 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>IBM CICS TX 11.1 does not set the secure attribute on authorization tokens or session cookies. Attackers may be able to get the cookie values by sending a http:// link to a user or by planting this link in a site the user goes to. The cookie will be sent to the insecure link and the attacker can then obtain the cookie value by snooping the traffic. IBM X-Force ID: 229436.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34307">详情</a></td>
       </tr>
 
      </tbody>
