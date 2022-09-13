@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-09-13 17:44:16 -->
+<!-- RELEASE TIME : 2022-09-13 21:33:38 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>27c0db4d91dec2de54466eda071de2d2</td>
+       <td>CVE-2022-40635</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper Control of Dynamically-Managed Code Resources vulnerability in Crafter Studio of Crafter CMS allows authenticated developers to execute OS commands via Groovy Sandbox Bypass.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40635">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>22428f4eb865f80aca0bb89de2de3ba9</td>
+       <td>CVE-2022-40634</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper Control of Dynamically-Managed Code Resources vulnerability in Crafter Studio of Crafter CMS allows authenticated developers to execute OS commands via FreeMarker SSTI.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40634">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a1adbe82d2db87217c9e2bbb741bcb05</td>
+       <td>CVE-2022-39208</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Onedev is an open source, self-hosted Git Server with CI/CD and Kanban. All files in the /opt/onedev/sites/ directory are exposed and can be read by unauthenticated users. This directory contains all projects, including their bare git repos and build artifacts. This file disclosure vulnerability can be used by unauthenticated attackers to leak all project files of any project. Since project IDs are incremental, an attacker could iterate through them and leak all project data. This issue has been resolved in version 7.3.0 and users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39208">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7eec2ceb5ff53e160755dd02d741ae3</td>
+       <td>CVE-2022-39207</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Onedev is an open source, self-hosted Git Server with CI/CD and Kanban. During CI/CD builds, it is possible to save build artifacts for later retrieval. They can be accessed through OneDev's web UI after the successful run of a build. These artifact files are served by the webserver in the same context as the UI without any further restrictions. This leads to Cross-Site Scripting (XSS) when a user creates a build artifact that contains HTML. When accessing the artifact, the content is rendered by the browser, including any JavaScript that it contains. Since all cookies (except for the rememberMe one) do not set the HttpOnly flag, an attacker could steal the session of a victim and use it to impersonate them. To exploit this issue, attackers need to be able to modify the content of artifacts, which usually means they need to be able to modify a project's build spec. The exploitation requires the victim to click on an attacker's link. It can be used to elevate privileges by targeting admins of a OneDev instance. In the worst case, this can lead to arbitrary code execution on the server, because admins can create Server Shell Executors and use them to run any command on the server. This issue has been patched in version 7.3.0. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39207">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0a3bdba59f7bf0ae491987776c76f87a</td>
+       <td>CVE-2022-39206</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Onedev is an open source, self-hosted Git Server with CI/CD and Kanban. When using Docker-based job executors, the Docker socket (e.g. /var/run/docker.sock on Linux) is mounted into each Docker step. Users that can define and trigger CI/CD jobs on a project could use this to control the Docker daemon on the host machine. This is a known dangerous pattern, as it can be used to break out of Docker containers and, in most cases, gain root privileges on the host system. This issue allows regular (non-admin) users to potentially take over the build infrastructure of a OneDev instance. Attackers need to have an account (or be able to register one) and need permission to create a project. Since code.onedev.io has the right preconditions for this to be exploited by remote attackers, it could have been used to hijack builds of OneDev itself, e.g. by injecting malware into the docker images that are built and pushed to Docker Hub. The impact is increased by this as described before. Users are advised to upgrade to 7.3.0 or higher. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39206">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>845697dee83c6ff403779ea083d74bf8</td>
+       <td>CVE-2022-39205</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Onedev is an open source, self-hosted Git Server with CI/CD and Kanban. In versions of Onedev prior to 7.3.0 unauthenticated users can take over a OneDev instance if there is no properly configured reverse proxy. The /git-prereceive-callback endpoint is used by the pre-receive git hook on the server to check for branch protections during a push event. It is only intended to be accessed from localhost, but the check relies on the X-Forwarded-For header. Invoking this endpoint leads to the execution of one of various git commands. The environment variables of this command execution can be controlled via query parameters. This allows attackers to write to arbitrary files, which can in turn lead to the execution of arbitrary code. Such an attack would be very hard to detect, which increases the potential impact even more. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39205">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cb0eaedadd20b94b838d0d9235ea06cb</td>
+       <td>CVE-2022-39203</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>matrix-appservice-irc is an open source Node.js IRC bridge for Matrix. Attackers can specify a specific string of characters, which would confuse the bridge into combining an attacker-owned channel and an existing channel, allowing them to grant themselves permissions in the channel. The vulnerability has been patched in matrix-appservice-irc 0.35.0. As a workaround operators may disable dynamic channel joining via `dynamicChannels.enabled` to prevent users from joining new channels, which prevents any new channels being bridged outside of what is already bridged, and what is specified in the config.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39203">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5a457fa88f68043a92f135796fd9e385</td>
+       <td>CVE-2022-38020</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Visual Studio Code Elevation of Privilege Vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38020">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7de2c89742244203f8caf33d409ecffd</td>
+       <td>CVE-2022-38019</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>AV1 Video Extension Remote Code Execution Vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38019">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>95a2b5a907b649e37b7b95fc8ec184be</td>
+       <td>CVE-2022-38013</td>
+       <td>2022-09-13 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>.NET Core and Visual Studio Denial of Service Vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38013">详情</a></td>
+      </tr>
+
+      <tr>
        <td>70ad5e3b619b93ed81871b89e5f95233</td>
        <td>CVE-2022-38542</td>
        <td>2022-09-13 15:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-09-13 10:15:00 <img src="imgs/new.gif" /></td>
        <td>A vulnerability has been identified in Parasolid V33.1 (All versions < V33.1.262), Parasolid V33.1 (All versions >= V33.1.262 < V33.1.263), Parasolid V34.0 (All versions < V34.0.252), Parasolid V34.1 (All versions < V34.1.242), Parasolid V35.0 (All versions < V35.0.161), Parasolid V35.0 (All versions >= V35.0.161 < V35.0.164), Simcenter Femap V2022.1 (All versions < V2022.1.3), Simcenter Femap V2022.2 (All versions < V2022.2.2). The affected application contains an out of bounds write past the end of an allocated buffer while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-17733)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39149">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b21e29f39762e6b2336a54c4477fe8fa</td>
-       <td>CVE-2022-39148</td>
-       <td>2022-09-13 10:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability has been identified in Parasolid V33.1 (All versions < V33.1.262), Parasolid V33.1 (All versions >= V33.1.262 < V33.1.263), Parasolid V34.0 (All versions < V34.0.252), Parasolid V34.1 (All versions < V34.1.242), Parasolid V35.0 (All versions < V35.0.161), Parasolid V35.0 (All versions >= V35.0.161 < V35.0.164), Simcenter Femap V2022.1 (All versions < V2022.1.3), Simcenter Femap V2022.2 (All versions < V2022.2.2). The affected application contains an out of bounds write past the end of an allocated buffer while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-17513)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39148">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f420df46d8bf0ed9da0b32033da3cd8f</td>
-       <td>CVE-2022-38304</td>
-       <td>2022-09-12 23:15:00 <img src="imgs/new.gif" /></td>
-       <td>Online Leave Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /maintenance/manage_leave_type.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38304">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>041354adcb40537cfb468e979763e341</td>
-       <td>CVE-2022-38303</td>
-       <td>2022-09-12 23:15:00 <img src="imgs/new.gif" /></td>
-       <td>Online Leave Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /employees/manage_leave_type.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38303">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fe5d1696366a724f7a783694235b262a</td>
-       <td>CVE-2022-38302</td>
-       <td>2022-09-12 23:15:00 <img src="imgs/new.gif" /></td>
-       <td>Online Leave Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /maintenance/manage_department.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38302">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a793e518e712eb043b7b28c3e4c31d32</td>
-       <td>CVE-2022-38297</td>
-       <td>2022-09-12 23:15:00 <img src="imgs/new.gif" /></td>
-       <td>UCMS v1.6.0 contains an authentication bypass vulnerability which is exploited via cookie poisoning.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38297">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7153ef3797747b2fa3da49a7c0333a1</td>
-       <td>CVE-2022-38299</td>
-       <td>2022-09-12 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue in the Elasticsearch plugin of Appsmith v1.7.11 allows attackers to connect disallowed hosts to the AWS/GCP internal metadata endpoint.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38299">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b87f5f67fdd1bb7d4a912976096b604</td>
-       <td>CVE-2022-38298</td>
-       <td>2022-09-12 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>Appsmith v1.7.11 was discovered to allow attackers to execute an authenticated Server-Side Request Forgery (SSRF) via redirecting incoming requests to the AWS internal metadata endpoint.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38298">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8ac3536ad4cb885f52a51b1f00aef3f8</td>
-       <td>CVE-2022-35572</td>
-       <td>2022-09-12 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>On Linksys E5350 WiFi Router with firmware version 1.0.00.037 and lower, (and potentially other vendors/devices due to code reuse), the /SysInfo.htm URI does not require a session ID. This web page calls a show_sysinfo function which retrieves WPA passwords, SSIDs, MAC Addresses, serial numbers, WPS Pins, and hardware/firmware versions, and prints this information into the web page. This web page is visible when remote management is enabled. A user who has access to the web interface of the device can extract these secrets. If the device has remote management enabled and is connected directly to the internet, this vulnerability is exploitable over the internet without interaction.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35572">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4c01a8e40f9a6039c4f65b8b15f93aa2</td>
-       <td>CVE-2022-38610</td>
-       <td>2022-09-12 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Garage Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /garage/editclient.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38610">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>01a272054e462c08d63c1138cb00830c</td>
-       <td>CVE-2022-38606</td>
-       <td>2022-09-12 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>Garage Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /garage/editcategory.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38606">详情</a></td>
       </tr>
 
      </tbody>
@@ -2212,6 +2212,22 @@
       </tr>
 
       <tr>
+       <td>2d8a0b48a676ba6717cd7147fe81fd0b</td>
+       <td>CVE-2022-40281</td>
+       <td>2022-09-08 22:15:08 </td>
+       <td>An issue was discovered in Samsung TizenRT through 3.0_GBM (and 3.1_PRE). cyassl_connect_step2 in curl/vtls/cyassl.c has a missing X509_free after SSL_get_peer_certificate, leading to information disclosure.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40281">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3ee2be65b1fe696245c87d07d39e735c</td>
+       <td>CVE-2022-40280</td>
+       <td>2022-09-08 22:15:08 </td>
+       <td>An issue was discovered in Samsung TizenRT through 3.0_GBM (and 3.1_PRE). createDB in security/provisioning/src/provisioningdatabasemanager.c has a missing sqlite3_close after sqlite3_open_v2, leading to a denial of service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40280">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d716ba005c16d7b34189a0e4e0b3c59e</td>
        <td>CVE-2022-38260</td>
        <td>2022-09-08 17:15:08 </td>
@@ -2409,22 +2425,6 @@
        <td>2022-09-05 04:15:08 </td>
        <td>sign_pFwInfo in Samsung mTower through 0.3.0 has a missing check on the return value of EC_KEY_set_private_key, leading to a denial of service.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39828">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a74d7c8b2a4059f6f0ea9e1ea7e6dbbc</td>
-       <td>CVE-2022-39824</td>
-       <td>2022-09-05 03:15:07 </td>
-       <td>Server-side JavaScript injection in Appsmith through 1.7.14 allows remote attackers to execute arbitrary JavaScript code from the server via the currentItem property of the list widget, e.g., to perform DoS attacks or achieve an information leak.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39824">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>253a83475d090e80a66a7e834b18284e</td>
-       <td>CVE-2022-39196</td>
-       <td>2022-09-05 00:15:09 </td>
-       <td>Blackboard Learn 1.10.1 allows remote authenticated users to read unintended files by entering student credentials and then directly visiting a certain webapps/bbcms/execute/ URL.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-39196">详情</a></td>
       </tr>
 
      </tbody>
