@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-10-10 07:06:04 -->
+<!-- RELEASE TIME : 2022-10-10 10:43:41 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f3854c792e39a045576fb7ed2123a138</td>
+       <td>CVE-2022-42725</td>
+       <td>2022-10-10 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>Warpinator through 1.2.14 allows access outside of an intended directory, as demonstrated by symbolic directory links.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42725">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6653e9c7c8a5e9daeb327e2303848dd7</td>
+       <td>CVE-2022-42724</td>
+       <td>2022-10-10 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>app/Controller/UsersController.php in MISP before 2.4.164 allows attackers to discover role names (this is information that only the site admin should have).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42724">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7fa264ea882afbcd7a99be703ff1c85e</td>
        <td>CVE-2022-42012</td>
        <td>2022-10-10 00:15:00 <img src="imgs/new.gif" /></td>
@@ -505,22 +521,6 @@
        <td>2022-10-07 15:15:00</td>
        <td>Improper access control vulnerability in Samsung Checkout prior to version 5.0.55.3 allows attackers to access sensitive information via implicit intent broadcast.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39878">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>393fc134c50782d30da04a38f15f269e</td>
-       <td>CVE-2022-39877</td>
-       <td>2022-10-07 15:15:00</td>
-       <td>Improper access control vulnerability in ProfileSharingAccount in Group Sharing prior to versions 13.0.6.15 in Android S(12), 13.0.6.14 in Android R(11) and below allows attackers to identify the device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39877">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>202a9d83b16cd61688eeb89837369c4b</td>
-       <td>CVE-2022-39876</td>
-       <td>2022-10-07 15:15:00</td>
-       <td>Insertion of Sensitive Information into Log in PushRegIdUpdateClient of SReminder prior to 8.2.01.13 allows attacker to access device IMEI.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39876">详情</a></td>
       </tr>
 
      </tbody>
@@ -2212,6 +2212,14 @@
       </tr>
 
       <tr>
+       <td>e10c985ba881b82bb94b6efcb0df9351</td>
+       <td>CVE-2022-41515</td>
+       <td>2022-10-07 18:15:22 </td>
+       <td>Open Source SACCO Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /sacco_shield/ajax.php?action=delete_payment.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-41515">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8d6142b312d7efd7f96f830f46462872</td>
        <td>CVE-2022-39877</td>
        <td>2022-10-07 15:15:23 </td>
@@ -2324,6 +2332,14 @@
       </tr>
 
       <tr>
+       <td>7ec6a533da5885695f5c66be77aa2bbb</td>
+       <td>CVE-2022-41556</td>
+       <td>2022-10-06 18:17:03 </td>
+       <td>A resource leak in gw_backend.c in lighttpd 1.4.56 through 1.4.66 could lead to a denial of service (connection-slot exhaustion) after a large amount of anomalous TCP behavior by clients. It is related to RDHUP mishandling in certain HTTP/1.1 chunked situations. Use of mod_fastcgi is, for example, affected. This is fixed in 1.4.67.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-41556">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7f362f625fa637d26fd64b5ddaa6a3bd</td>
        <td>CVE-2022-40158</td>
        <td>2022-10-06 18:16:24 </td>
@@ -2409,22 +2425,6 @@
        <td>2022-10-03 15:15:22 </td>
        <td>An issue was discovered in Veritas NetBackup through 10.0.0.1 and related Veritas products. The NetBackup Primary server is vulnerable to an XML External Entity (XXE) Injection attack through the DiscoveryService service.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42307">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29a2cc9d311b60aa4735218a417012bd</td>
-       <td>CVE-2022-42306</td>
-       <td>2022-10-03 15:15:22 </td>
-       <td>An issue was discovered in Veritas NetBackup through 8.2 and related Veritas products. An attacker with local access can send a crafted packet to pbx_exchange during registration and cause a NULL pointer exception, effectively crashing the pbx_exchange process.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42306">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3d945362433bbf74dd331c0bedac4e2d</td>
-       <td>CVE-2022-42305</td>
-       <td>2022-10-03 15:15:21 </td>
-       <td>An issue was discovered in Veritas NetBackup through 10.0.0.1 and related Veritas products. The NetBackup Primary server is vulnerable to a Path traversal attack through the DiscoveryService service.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42305">详情</a></td>
       </tr>
 
      </tbody>
