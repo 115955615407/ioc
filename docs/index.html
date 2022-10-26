@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-10-26 10:38:14 -->
+<!-- RELEASE TIME : 2022-10-26 11:30:22 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>cb163912cef51d73057d078ec9d62087</td>
+       <td>CVE-2022-31256</td>
+       <td>2022-10-26 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>A Improper Link Resolution Before File Access ('Link Following') vulnerability in a script called by the sendmail systemd service of openSUSE Factory allows local attackers to escalate from user mail to root. This issue affects: SUSE openSUSE Factory sendmail versions prior to 8.17.1-1.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31256">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a78a0dc7ece65b16f8f3bbfe8a203211</td>
+       <td>CVE-2022-25849</td>
+       <td>2022-10-26 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>The package joyqi/hyper-down from 0.0.0 are vulnerable to Cross-site Scripting (XSS) because the module of parse markdown does not filter the href attribute very well.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25849">详情</a></td>
+      </tr>
+
+      <tr>
        <td>94d1103beb47709fd9d1175bfa628c69</td>
        <td>CVE-2022-43750</td>
        <td>2022-10-26 04:15:00 <img src="imgs/new.gif" /></td>
@@ -505,22 +521,6 @@
        <td>2022-10-25 17:15:00 <img src="imgs/new.gif" /></td>
        <td>@dependencytrack/frontend is a Single Page Application (SPA) used in Dependency-Track, an open source Component Analysis platform that allows organizations to identify and reduce risk in the software supply chain. Due to the common practice of providing vulnerability details in markdown format, the Dependency-Track frontend renders them using the JavaScript library Showdown. Showdown does not have any XSS countermeasures built in, and versions before 4.6.1 of the Dependency-Track frontend did not encode or sanitize Showdown's output. This made it possible for arbitrary JavaScript included in vulnerability details via HTML attributes to be executed in context of the frontend. Actors with the `VULNERABILITY_MANAGEMENT` permission can exploit this weakness by creating or editing a custom vulnerability and providing XSS payloads in any of the following fields: Description, Details, Recommendation, or References. The payload will be executed for users with the `VIEW_PORTFOLIO` permission when browsing to the modified vulnerability's page. Alternatively, malicious JavaScript could be introduced via any of the vulnerability databases mirrored by Dependency-Track. However, this attack vector is highly unlikely, and the maintainers of Dependency-Track are not aware of any occurrence of this happening. Note that the `Vulnerability Details` element of the `Audit Vulnerabilities` tab in the project view is not affected. The issue has been fixed in frontend version 4.6.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39350">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>21923ce0e6e8672ce6f27736d2d65c82</td>
-       <td>CVE-2022-39349</td>
-       <td>2022-10-25 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>The Tasks.org Android app is an open-source app for to-do lists and reminders. The Tasks.org app uses the activity `ShareLinkActivity.kt` to handle "share" intents coming from other components in the same device and convert them to tasks. Those intents may contain arbitrary file paths as attachments, in which case the files pointed by those paths are copied in the app's external storage directory. Prior to versions 12.7.1 and 13.0.1, those paths were not validated, allowing a malicious or compromised application in the same device to force Tasks.org to copy files from its internal storage to its external storage directory, where they became accessible to any component with permission to read the external storage. This vulnerability can lead to sensitive information disclosure. All information in the user's notes and the app's preferences, including the encrypted credentials of CalDav integrations if enabled, could be accessed by third party applications installed on the same device. This issue was fixed in versions 12.7.1 and 13.0.1. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39349">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8688789795d4e7f3fa143f6329b3ea0b</td>
-       <td>CVE-2022-39345</td>
-       <td>2022-10-25 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>Gin-vue-admin is a backstage management system based on vue and gin, which separates the front and rear of the full stack. Gin-vue-admin prior to 2.5.4 is vulnerable to path traversal, which leads to file upload vulnerabilities. Version 2.5.4 contains a patch for this issue. There are no workarounds aside from upgrading to a patched version.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39345">详情</a></td>
       </tr>
 
      </tbody>
