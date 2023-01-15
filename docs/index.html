@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-15 06:30:53 -->
+<!-- RELEASE TIME : 2023-01-15 07:23:50 -->
 <html lang="zh-cn">
 
  <head>
@@ -2308,6 +2308,14 @@
       </tr>
 
       <tr>
+       <td>7771d217bbc13a45f45155945ce9cdbe</td>
+       <td>CVE-2022-44149</td>
+       <td>2023-01-06 17:15:09 </td>
+       <td>The web service on Nexxt Amp300 ARN02304U8 42.103.1.5095 devices allows remote OS command execution by placing &amp;telnetd in the JSON host field to the ping feature of the goform/sysTools component. Authentication is required.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-44149">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cfe9ff096a6529684244dd9dc9449efc</td>
        <td>CVE-2022-3929</td>
        <td>2023-01-05 22:15:09 </td>
@@ -2433,14 +2441,6 @@
        <td>2023-01-04 22:15:09 </td>
        <td>Tokio is a runtime for writing applications with Rust. Starting with version 1.7.0 and prior to versions 1.18.4, 1.20.3, and 1.23.1, when configuring a Windows named pipe server, setting `pipe_mode` will reset `reject_remote_clients` to `false`. If the application has previously configured `reject_remote_clients` to `true`, this effectively undoes the configuration. Remote clients may only access the named pipe if the named pipe's associated path is accessible via a publicly shared folder (SMB). Versions 1.23.1, 1.20.3, and 1.18.4 have been patched. The fix will also be present in all releases starting from version 1.24.0. Named pipes were introduced to Tokio in version 1.7.0, so releases older than 1.7.0 are not affected. As a workaround, ensure that `pipe_mode` is set first after initializing a `ServerOptions`.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22466">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e3d63fb1a840ff9b0e36cce7ff3b4ff6</td>
-       <td>CVE-2022-4875</td>
-       <td>2023-01-04 22:15:09 </td>
-       <td>A vulnerability has been found in fossology and classified as problematic. This vulnerability affects unknown code. The manipulation of the argument sql/VarValue leads to cross site scripting. The attack can be initiated remotely. The name of the patch is 8e0eba001662c7eb35f045b70dd458a4643b4553. It is recommended to apply a patch to fix this issue. VDB-217426 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4875">详情</a></td>
       </tr>
 
      </tbody>
