@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-25 14:30:44 -->
+<!-- RELEASE TIME : 2023-09-25 17:28:45 -->
 <html lang="zh-cn">
 
  <head>
@@ -364,6 +364,46 @@
       </tr>
 
       <tr>
+       <td>d32dfc62286f6b938d5550a5589c03f6</td>
+       <td>CVE-2023-1636</td>
+       <td>2023-09-24 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in OpenStack Barbican containers. This vulnerability is only applicable to deployments that utilize an all-in-one configuration. Barbican containers share the same CGROUP, USER, and NET namespace with the host system and other OpenStack services. If any service is compromised, it could gain access to the data transmitted to and from Barbican.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1636">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d229a7b2b7b6b05f41c942379c1ff4ba</td>
+       <td>CVE-2023-1633</td>
+       <td>2023-09-24 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>A credentials leak flaw was found in OpenStack Barbican. This flaw allows a local authenticated attacker to read the configuration file, gaining access to sensitive credentials.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1633">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7498bb8cf4748b8a3119620f2f638258</td>
+       <td>CVE-2023-1625</td>
+       <td>2023-09-24 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An information leak was discovered in OpenStack heat. This issue could allow a remote, authenticated attacker to use the 'stack show' command to reveal parameters which are supposed to remain hidden. This has a low impact to the confidentiality, integrity, and availability of the system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1625">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>202bb0781cf63935eec6506b9a66e2f5</td>
+       <td>CVE-2023-1260</td>
+       <td>2023-09-24 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An authentication bypass vulnerability was discovered in kube-apiserver. This issue could allow a remote, authenticated attacker who has been given permissions "update, patch" the "pods/ephemeralcontainers" subresource beyond what the default is. They would then need to create a new pod or patch one that they already have access to. This might allow evasion of SCC admission restrictions, thereby gaining control of a privileged pod.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1260">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c50f07859e6799f9b100e6ec8c257e4</td>
+       <td>CVE-2022-3962</td>
+       <td>2023-09-23 20:15:00</td>
+       <td>A content spoofing vulnerability was found in Kiali. It was discovered that Kiali does not implement error handling when the page or endpoint being accessed cannot be found. This issue allows an attacker to perform arbitrary text injection when an error response is retrieved from the URL being accessed.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3962">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f075b0d36fb37b3bf9df72be90ccd8b2</td>
        <td>CVE-2023-5134</td>
        <td>2023-09-23 08:15:00</td>
@@ -481,46 +521,6 @@
        <td>2023-09-22 00:15:00</td>
        <td>FUXA <= 1.1.12 is vulnerable to Local via Inclusion via /api/download.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31718">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b04cdb0f097c48d1eac2cbd53fe0d572</td>
-       <td>CVE-2023-31717</td>
-       <td>2023-09-22 00:15:00</td>
-       <td>A SQL Injection attack in FUXA <= 1.1.12 allows exfiltration of confidential information from the database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31717">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f1f92b6da330becdfc35a3f40969131</td>
-       <td>CVE-2023-31716</td>
-       <td>2023-09-22 00:15:00</td>
-       <td>FUXA <= 1.1.12 has a Local File Inclusion vulnerability via file=fuxa.log</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31716">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7638136db8294d06fabb612b6f7e5ef5</td>
-       <td>CVE-2023-5068</td>
-       <td>2023-09-21 23:15:00</td>
-       <td>Delta Electronics DIAScreen may write past the end of an allocated buffer while parsing a specially crafted input file. This could allow an attacker to execute code in the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5068">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>38d91b20db9454630cde5e699f0f1e1d</td>
-       <td>CVE-2023-4504</td>
-       <td>2023-09-21 23:15:00</td>
-       <td>Due to failure in validating the length provided by an attacker-crafted PostScript document, CUPS and libppd are susceptible to a heap-based buffer overflow and possibly code execution. This issue has been fixed in CUPS version 2.4.7, released in September of 2023.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4504">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a2a5785871a2aa0d27582585e383c5db</td>
-       <td>CVE-2023-43128</td>
-       <td>2023-09-21 23:15:00</td>
-       <td>D-LINK DIR-806 1200M11AC wireless router DIR806A1_FW100CNb11 is vulnerable to command injection due to lax filtering of HTTP_ST parameters.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43128">详情</a></td>
       </tr>
 
      </tbody>
